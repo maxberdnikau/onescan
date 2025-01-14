@@ -1,5 +1,7 @@
 // import Image from "next/image";
 
+import HomeComponent from "app/pages/home";
+
 {/* <Image
   className="dark:invert"
   src="/next.svg"
@@ -11,6 +13,6 @@
 
 export default function Home() {
   return (
-    <main></main>
+    <HomeComponent lang="ru" />
   );
 }

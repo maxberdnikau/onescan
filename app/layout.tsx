@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 
-import "styles/globals.scss";
-import "styles/tailwind.css";
+import "app/styles/globals.scss";
+import "app/styles/tailwind.css";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -19,13 +19,19 @@ export const metadata: Metadata = {
   description: "",
 };
 
+export async function generateStaticParams() {
+  return [{ lang: 'ru' }, { lang: 'cs' }]
+}
+
 export default function RootLayout({
   children,
+  params,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode,
+  params: { lang: string }
 }>) {
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       <body
         className={`antialiased`}
       >
