@@ -23,7 +23,9 @@ export default function RootLayout({
       <body
         className={`flex flex-col antialiased`}
       >
-        {children}
+        <div className="flex flex-col mx-auto w-full h-full default-container">
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -1,0 +1,112 @@
+.checkItem {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 5);
+    padding: 16px 8px;
+    align-items: center;
+}
+
+.checkItem__image {
+    max-width: 172px;
+    aspect-ratio: 172 / 120;
+    width: 100%;
+}
+
+.checkItem__header,
+.checkItem__text {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.checkItem__text {
+    color: #8B8B8B;
+}
+
+.priceItem {
+    width: calc(25% - calc(calc(8px * 3) / 4));
+    background-color: #fff;
+    min-height: 250px;
+    border: 2px solid #002862;
+
+    &:first-child {
+        border-color: transparent;
+    }
+}
+
+.priceItem__image {
+    width: 64px;
+    aspect-ratio: 1 / 1;
+}
+
+.formContainer {
+    padding: 16px 95px 32px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+    .checkItem {
+        &:nth-child(5n) {
+            border-right: none;
+        }
+        &:nth-child(-n+5) {
+            border-top: none;
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 991px) {
+    .checkItem {
+        &:nth-child(3n) {
+            border-right: none;
+        }
+        &:nth-child(-n+3) {
+            border-top: none;
+        }
+    }
+
+    .priceItem:nth-child(n+3) {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .checkItem {
+        width: calc(100% / 3);
+    }
+
+    .priceItem {
+        width: calc(50% - calc(16px / 2));
+    }
+
+    .formContainer {
+        padding: 16px 54px 32px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .checkItem {
+        width: calc(100% - 16px);
+        margin: 0 8px;
+    }
+    .checkItem {
+        border-right: none;
+    }
+    .checkItem:nth-child(1) {
+        border-top: none;
+    }
+
+    .priceItem {
+        width: 100%;
+    }
+
+    .priceItem:nth-child(n+2) {
+        margin-top: 16px;
+    }
+
+
+    .formContainer {
+        padding: 16px 22px 32px;
+        margin: 0;
+        width: 100%;
+    }
+}
