@@ -12,7 +12,7 @@ export default function Header({
 }) {
     return (
         <header className={`${styles.header} flex border-b border-b-light-grey`}>
-            <Link className={styles.logo} href={lang !== 'ru' ? `/${lang}` : '/'}>
+            <Link className={styles.logo} href={lang !== 'cs' ? `/${lang}` : '/'}>
                 <Image
                     className={styles.logo}
                     src="/assets/logo/onescan-logo.svg"

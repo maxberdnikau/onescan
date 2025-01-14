@@ -38,7 +38,7 @@ export default async function Footer ({
                 <a href='mailto:auto@onescan.pro' className={`${styles.footerLink} text-sm whitespace-nowrap`}>auto@onescan.pro</a>
                 <a href="tel:+420601256408" className={`${styles.footerLink} text-sm whitespace-nowrap`}>+420 601 256 408</a>
             </section>
-            <Link href={'/'}
+            <Link href={lang !== 'cs' ? `/${lang}` : '/'}
                 className={`${styles.logo} mx-auto mt-[24px]`}>
                 <Image src={'/assets/logo/onescan-logo.svg'}
                     alt="footer Onescan logo"
