@@ -3,7 +3,7 @@
 import SiteWrapper from "app/components/site-wrapper";
 
 export default function HomeComponent({
-    lang = 'ru'
+    lang = 'cs'
 }: {
     lang: 'ru' | 'cs'
 }) {

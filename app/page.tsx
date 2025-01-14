@@ -13,6 +13,6 @@ import HomeComponent from "app/pages/home";
 
 export default function Home() {
   return (
-    <HomeComponent lang="ru" />
+    <HomeComponent lang="cs" />
   );
 }

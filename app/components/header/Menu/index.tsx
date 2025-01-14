@@ -22,7 +22,9 @@ const Menu = ({
     const [dictionary, update_dictionary] = React.useState(null);
 
     React.useEffect(() => {
-        set_dict_data();
+        get_dictionary('/header/menu', lang).then(dict => {
+            update_dictionary(dict);
+        });
     }, []);
 
     React.useEffect(() => {
@@ -44,14 +46,7 @@ const Menu = ({
                 body.style.width = '';
             }
         }
-    }, [mob_menu_view])
-
-    const set_dict_data = async () => {
-        get_dictionary(lang).then(dict => {
-            update_dictionary(dict);
-        });
-
-    }
+    }, [mob_menu_view]);
 
     // elements classes
     let menuButtonClass = `${styles.menuButton} hidden md:flex`,
