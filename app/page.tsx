@@ -1,15 +1,12 @@
-// import Image from "next/image";
+import type { Metadata } from "next";
 
 import HomeComponent from "app/pages/home";
 
-{/* <Image
-  className="dark:invert"
-  src="/next.svg"
-  alt="Next.js logo"
-  width={180}
-  height={38}
-  priority
-/> */}
+import { seo_builder } from "app/components/seo";
+
+export const metadata: Metadata = seo_builder({
+  title: "Onescan"
+});
 
 export default function Home() {
   return (
