@@ -1,0 +1,111 @@
+.container {
+    margin-left: -142px;
+    margin-right: -120px;
+}
+
+.menu {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.menuItem {
+    margin-right: 12px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.menuButton {
+    margin: auto 0 auto auto;
+    width: 28px;
+    height: 22px;
+    position: relative;
+    border-bottom: 2px solid #000000;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        background: #000000;
+        transition: .2s ease;
+        -webkit-transition: .2s ease;
+        -moz-transition: .2s ease;
+        -ms-transition: .2s ease;
+        -o-transition: .2s ease;
+    }
+    &::before {
+        top: 0;
+    }
+    &::after {
+        top: 50%;
+    }
+    
+    .menuButton_close {
+        border: 0;
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            width: 90%;
+            background: #000000;
+            top: 100%;
+            margin-top: -40%;
+            left: 2px;
+            margin-left: -8%;
+        }
+    }
+    .menuButton_close:before {
+        transform: rotate(45deg);
+    }
+    .menuButton_close:after {
+        transform: rotate(-45deg);
+    }
+
+    transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -ms-transition: .2s ease;
+    -o-transition: .2s ease;
+}
+
+@media screen and (max-width: 991px) {
+    .menuContainer {
+        position: fixed;
+        right: calc(-100%);
+        top: 51px;
+        transition: .2s ease;
+        -webkit-transition: .2s ease;
+        -moz-transition: .2s ease;
+        -ms-transition: .2s ease;
+        -o-transition: .2s ease;
+        height: calc(100% - 51px);
+        background-color: #fff;
+        z-index: 2;
+        padding: 0 16px;
+    }
+    .menuContainer_open {
+        right: 0px;
+    }
+
+    .menu {
+        margin-left: unset;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+    }
+}

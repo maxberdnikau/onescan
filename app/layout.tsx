@@ -1,18 +1,10 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
 
-import "app/styles/globals.scss";
+import "app/styles/accordion.css";
+import "app/styles/font.css";
+import "app/styles/slider.css";
 import "app/styles/tailwind.css";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+import "app/styles/globals.scss";
 
 export const metadata: Metadata = {
   title: "Onescan",

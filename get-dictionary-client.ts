@@ -1,5 +1,3 @@
-import "server-only";
-
 type Locale = ["ru", "cs"][number];
 
 export const get_dictionary = async (

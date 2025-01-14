@@ -1,0 +1,20 @@
+.header {
+    padding: 5px 0;
+    width: 100%;
+}
+
+.logo {
+    z-index: 1;
+    
+    img {
+        width: 142px;
+        aspect-ratio: 142 / 40;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        width: calc(100% - 8px);
+        margin: 0 auto;
+    }
+}

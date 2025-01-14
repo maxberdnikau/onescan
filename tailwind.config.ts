@@ -7,10 +7,69 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    maxWidth: {
+      'textContainer': '775px',
+    },
+    colors: {
+      'grey': '#F3F3F3',
+      'light-grey': '#E9E9E9',
+      'light-blue': '#2AB2D7',
+      'dark-grey': '#7C7C7C',
+      'black': '#000',
+      'inherit': 'inherit',
+    },
+    borderRadius: {
+      'none': '0',
+      DEFAULT: '3px',
+      'large': '10px',
+    },
+    fontSize: {
+      xm: ['.75rem', {
+        lineHeight: '.875rem',
+      }],
+      sm: ['.875rem', {
+        lineHeight: '1rem',
+      }],
+      base: ['1rem', {
+        lineHeight: '1.125rem',
+      }],
+      lg: ['1.125rem', {
+        lineHeight: '1.2',
+      }],
+      xl: ['1.25rem', {
+        lineHeight: '1.2',
+      }],
+      '2xl': ['1.5rem', {
+        lineHeight: '1.2',
+      }],
+      '3xl': ['2rem', {
+        lineHeight: '1.2',
+      }],
+      '4xl': ['2.25rem', {
+        lineHeight: '1.2',
+      }],
+      '5xl': ['2.5rem', {
+        lineHeight: '1.2',
+      }],
+      '6xl': ['3rem', {
+        lineHeight: '1.2',
+      }],
+    },
+    screens: {
+      '2xl': {'max': '2000px'},
+      'xl': {'max': '1600px'},
+      'lg': {'max': '1200px'},
+      'md': {'max': '991px'},
+      'sm': {'max': '576px'},
+    },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+
+      padding: {
+        '5': '5px',
       },
       
       spacing: {
