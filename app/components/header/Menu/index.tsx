@@ -62,7 +62,6 @@ const Menu = ({
             <button type='button'
                 className={menuButtonClass}
                 onClick={() => toggle_mob_menu_view(!mob_menu_view)}>
-
             </button>
             <nav className={`${menuContainerClass} flex w-full md:flex-col`}>
                 {
@@ -72,7 +71,9 @@ const Menu = ({
                             menu.map((menu_item: menu_item_type): React.ReactElement => (
                                 <li key={nanoid()}
                                     className={`${styles.menuItem} flex md:border-b md:border-b-light-grey`}>
-                                    <Link href={menu_item.link} className='text-sm md:py-[16px] w-full'>
+                                    <Link href={menu_item.link}
+                                        className='text-sm md:py-[16px] w-full'
+                                        onClick={() => toggle_mob_menu_view(false)}>
                                         {dictionary[menu_item.name]}
                                     </Link>
                                 </li>
