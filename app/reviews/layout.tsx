@@ -1,4 +1,11 @@
+import { Metadata } from "next";
 import SiteWrapper from "app/components/site-wrapper";
+
+import { seo_builder } from "app/components/seo";
+
+export const metadata: Metadata = seo_builder({
+  title: 'Отзывы'
+});
 
 export default function MdxLayout({ children }: { children: React.ReactNode }) {
     // Create any shared layout or styles here

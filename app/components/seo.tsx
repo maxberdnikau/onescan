@@ -12,7 +12,7 @@ export const seo_builder = ({
     keywords?: string,
 }): Metadata => {
     return {
-        title: title,
+        title: `${title} | Onescan`,
         description: description,
         applicationName: 'Onescan',
         keywords: keywords,
@@ -20,11 +20,11 @@ export const seo_builder = ({
             canonical: `https://onescan.pro/` + canonical
         },
         openGraph: {
-          title: title,
+          title: `${title} | Onescan`,
           description: description,
         },
         twitter: {
-          title: title,
+          title: `${title} | Onescan`,
           description: description
         }
     }
