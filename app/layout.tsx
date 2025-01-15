@@ -1,3 +1,5 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 import "app/styles/accordion.css";
 import "app/styles/font.css";
 import "app/styles/slider.css";
@@ -27,6 +29,7 @@ export default function RootLayout({
           {children}
         </div>
       </body>
+      <GoogleAnalytics gaId='G-67ZK64X96Z' />
     </html>
   );
 }
