@@ -23,7 +23,7 @@ export default async function HomeComponent({
     return (
         <SiteWrapper lang={lang}>
             <main className='flex flex-col w-full pb-[180px]'>
-                <h1 className='text-5xl md:text-4xl sm:text-2xl mt-32px font-bold text-center'>{dictionary.main_text}</h1>
+                <h1 className='text-5xl md:text-4xl sm:text-2xl mt-32px font-bold text-center whitespace-break-spaces'>{dictionary.main_text}</h1>
                 <div className='rounded-large overflow-hidden mt-16px'>
                     <Slider />
                 </div>
@@ -46,7 +46,7 @@ export default async function HomeComponent({
                                             height={120} />
                                     </div>
                                     <p className={`${styles.checkItem__header} font-bold text-xl`}>{dictionary.section_1.list[check_item.index].header}</p>
-                                    <p className={`${styles.checkItem__text} text-xm`}>{dictionary.section_1.list[check_item.index].text}</p>
+                                    <p className={`${styles.checkItem__text} text-xm whitespace-break-spaces`}>{dictionary.section_1.list[check_item.index].text}</p>
                                 </li>
                             ))
                         }
