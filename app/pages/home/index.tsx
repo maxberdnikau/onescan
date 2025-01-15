@@ -1,10 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import { nanoid } from "nanoid";
 
 import SiteWrapper from "app/components/site-wrapper";
 import Slider from "app/components/main/home/Slider";
 
 import { get_dictionary } from "get-dictionary";
+
+import { check_item, check_list } from "./data";
 
 import styles from './style.module.scss';
 
@@ -18,56 +21,37 @@ export default async function HomeComponent({
     return (
         <SiteWrapper lang={lang}>
             <main className='flex flex-col w-full pb-[180px]'>
-                <h1 className='text-5xl md:text-4xl sm:text-2xl mt-[32px] font-bold text-center'>{dictionary.main_text}</h1>
+                <h1 className='text-5xl md:text-4xl sm:text-2xl mt-32px font-bold text-center'>{dictionary.main_text}</h1>
 
-                <div className='rounded-large overflow-hidden mt-[16px]'>
+                <div className='rounded-large overflow-hidden mt-16px'>
                     <Slider />
                 </div>
 
-                <p className='text-2xl sm:text-xl mt-[24px] text-center font-medium text-dark-grey'>
+                <p className='text-2xl sm:text-xl mt-24px text-center font-medium text-dark-grey'>
                     {dictionary.description}
                 </p>
                 
-                <section className='mt-[96px] border border-light-grey py-[24px] rounded-large'>
+                <section className='mt-[96px] border border-light-grey py-24px rounded-large'>
                     <h2 className='text-4xl md:text-3xl sm:text-xl font-bold text-center'>{dictionary.section_1.header}</h2>
-                    <p className='mt-[16px] text-center font-medium text-dark-grey max-w-textContainer mx-auto'>{dictionary.section_1.text}</p>
+                    <p className='mt-16px text-center font-medium text-dark-grey max-w-textContainer mx-auto'>{dictionary.section_1.text}</p>
 
-                    {/* <ul className='flex flex-wrap mt-[24px]'>
+                    <ul className='flex flex-wrap mt-24px'>
                         {
-                            check_list && check_list.check_list.map((check_item, index) => {
-                                const check_item_description_list = check_item.text.split(check_list_slash);
-        
-                                return(
-                                    <li className={`${styles.checkItem} border-r border-r-light-grey border-t border-t-light-grey`} key={index}>
-                                        {
-                                            image_data && image_data[check_item.image+''] ?
-                                            <div className={styles.checkItem__image}>
-                                                <GatsbyImage 
-                                                    image={{
-                                                            ...image_data[check_item.image+''].childImageSharp.gatsbyImageData,
-                                                            sizes: '(min-width: 1400px) 1900px, (min-width: 1000px) 1000px, (min-width: 700px) 700px, (min-width: 300px) 300px',
-                                                        }}
-                                                    alt={check_item.header ? check_item.header : 'Список проверки'} />
-                                            </div> : null
-                                        }
-                                        <p className={`${styles.checkItem__header} font-bold text-xl`}>{check_item.header}</p>
-                                        {
-                                            check_item.text_type === 'list' ?
-                                            <ul className={`${styles.checkItem__text} text-xm m-0 list-disc flex flex-col items-center`}>
-                                                {
-                                                    check_item_description_list.map((item, index) => (
-                                                        <li key={index}>
-                                                            <p className={`text-inherit text-xm m-0`}>{item}</p>
-                                                        </li>
-                                                    ))
-                                                }
-                                            </ul> : <p className={`${styles.checkItem__text} text-xm`}>{check_item.text}</p>
-                                        }
-                                    </li>
-                                )
-                            })
+                            check_list.map((check_item: check_item) => (
+                                <li className={`${styles.checkItem} border-r border-r-light-grey border-t border-t-light-grey`} key={nanoid()}>
+                                    <div className={styles.checkItem__image}>
+                                        <Image
+                                            src={check_item.image}
+                                            alt={`car check image ${check_item.index}`}
+                                            width={172}
+                                            height={120} />
+                                    </div>
+                                    <p className={`${styles.checkItem__header} font-bold text-xl`}>{dictionary.section_1.list[check_item.index].header}</p>
+                                    <p className={`${styles.checkItem__text} text-xm`}>{dictionary.section_1.list[check_item.index].text}</p>
+                                </li>
+                            ))
                         }
-                    </ul> */}
+                    </ul>
 
                 </section>
 
