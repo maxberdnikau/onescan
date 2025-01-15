@@ -4,6 +4,7 @@ import { nanoid } from "nanoid";
 
 import SiteWrapper from "app/components/site-wrapper";
 import Slider from "app/components/main/home/Slider";
+import Form from "app/components/main/home/Form";
 
 import { get_dictionary } from "get-dictionary";
 
@@ -103,7 +104,7 @@ export default async function HomeComponent({
                     <div className={`${styles.formContainer} border border-light-grey bg-grey rounded-large flex flex-col items-center`}>
                         <h2 className='text-4xl md:text-3xl sm:text-xl font-bold text-center'>{dictionary.form.header}</h2>
 
-                        {/* <Form /> */}
+                        <Form dictionary={dictionary} />
 
                         <p className='mt-[16px] font-bold text-base md:text-sm'>{dictionary.form.text}</p>
                         <div>
