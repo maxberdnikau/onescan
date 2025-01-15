@@ -1,4 +1,4 @@
-import HomeComponent from "app/pages/home";
+import HomeComponent from "@/app/pages/home";
 
 export default async function HomeRU() {
     return (

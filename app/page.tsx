@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import HomeComponent from "app/pages/home";
+import HomeComponent from "@/app/pages/home";
 
 import { seo_builder } from "app/components/seo";
 

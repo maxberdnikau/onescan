@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import SiteWrapper from "app/components/site-wrapper";
+import Slider from "app/components/main/home/Slider";
 
 import { get_dictionary } from "get-dictionary";
 
@@ -19,9 +20,9 @@ export default async function HomeComponent({
             <main className='flex flex-col w-full pb-[180px]'>
                 <h1 className='text-5xl md:text-4xl sm:text-2xl mt-[32px] font-bold text-center'>{dictionary.main_text}</h1>
 
-                {/* <div className='rounded-large overflow-hidden mt-[16px]'>
-                    <Slider slides={slider.slides} />
-                </div> */}
+                <div className='rounded-large overflow-hidden mt-[16px]'>
+                    <Slider />
+                </div>
 
                 <p className='text-2xl sm:text-xl mt-[24px] text-center font-medium text-dark-grey'>
                     {dictionary.description}
