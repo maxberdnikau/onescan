@@ -7,7 +7,7 @@ import Slider from "app/components/main/home/Slider";
 
 import { get_dictionary } from "get-dictionary";
 
-import { check_item, check_list } from "./data";
+import { check_item, check_list, price_item, price_list } from "./data";
 
 import styles from './style.module.scss';
 
@@ -55,31 +55,38 @@ export default async function HomeComponent({
 
                 </section>
 
-                <section className='mt-[96px] border border-light-grey pt-[16px] px-[12px] pb-[32px] bg-grey rounded-large flex flex-col' id='prices'>
+                <section className='mt-[96px] border border-light-grey pt-16px px-12px pb-32px bg-grey rounded-large flex flex-col'
+                    id='prices'>
                     <h2 className='text-4xl md:text-3xl sm:text-xl font-bold text-center'>{dictionary.section_2.header}</h2>
-                    <p className='mt-[16px] text-center font-medium text-dark-grey max-w-textContainer mx-auto text-base'>
+                    <p className='mt-16px text-center font-medium text-dark-grey max-w-textContainer mx-auto text-base'>
                         {dictionary.section_2.text_1}
                     </p>
 
-                    {/* <ul className='flex flex-wrap justify-between mt-[24px]'>
+                    <ul className='flex flex-wrap justify-between mt-24px'>
                         {
-                            price && price.price.map((service, index) => (
-                                <li key={index} className={`${styles.priceItem} rounded-large border-2 flex flex-col p-[12px]`}>
+                            price_list.map((service: price_item) => (
+                                <li key={nanoid()}
+                                    className={`${styles.priceItem} rounded-large border-2 flex flex-col p-12px`}>
                                     <div className='flex'>
                                         {
                                             service.image ?
-                                            <img className={`${styles.priceItem__image} mr-[4px]`} src={service.image} alt={service.header} /> : null
+                                            <Image
+                                                className={`${styles.priceItem__image} mr-4px`}
+                                                src={service.image}
+                                                width={64}
+                                                height={64}
+                                                alt={``} /> : null
                                         }
                                         <div className='flex flex-col'>
-                                            <p className='font-bold text-lg'>{service.header}</p>
-                                            <p className='font-bold text-4xl'>{service.price}</p>
+                                            <p className='font-bold text-lg'>{dictionary.section_2.list[service.index].header}</p>
+                                            <p className='font-bold text-4xl'>{dictionary.section_2.list[service.index].price}</p>
                                         </div>
                                     </div>
-                                    <p className='font-medium mt-[4px] text-sm text-dark-grey'>{service.description}</p>
+                                    <p className='font-medium mt-[4px] text-sm text-dark-grey'>{dictionary.section_2.list[service.index].description}</p>
                                 </li>
                             ))
                         }
-                    </ul> */}
+                    </ul>
 
                     <p className='mt-24px text-center font-medium text-dark-grey max-w-textContainer mx-auto text-base'>
                         {dictionary.section_2.text_2}
