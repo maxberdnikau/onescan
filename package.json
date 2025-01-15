@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@formspree/react": "^2.5.1",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-accessible-accordion": "^5.0.0",
