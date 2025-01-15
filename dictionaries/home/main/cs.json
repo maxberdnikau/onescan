@@ -1,102 +1,102 @@
 {
-    "main_text": "Профессиональная проверка и индивидуальный подбор автомобилей в Чехии",
-    "description": "Бесплатно найдём подходящее авто, прокомментируем объявления выбранные вами. Каждый автомобиль детально проверяем. Мы ценим вас и ваше время.",
+    "main_text": "Profesionální kontrola a individuální výběr aut",
+    "description": "Každé auto důkladně kontrolujeme. Vážíme si vás i vašeho času.",
     "section_1": {
-        "header": "Внимательно проверяем авто",
-        "text": "По пунктам оценим основные элементы автомобиля",
+        "header": "Zvolte si nejlepší auto",
+        "text": "Bodově zhodnotíme hlavní prvky auta",
         "list": {
             "1": {
-                "header": "Двигатель",
-                "text": "Запотевания и течи масла, нехарактерные шумы при работе, следы ремонта"
+                "header": "Motor",
+                "text": "Úniky a prosakování oleje, neobvyklé zvuky při provozu, stopy po opravách"
             },
             "2": {
-                "header": "Коробку передач",
-                "text": "Исправность переключений, сцепление, вибрации и шум"
+                "header": "Převodovka",
+                "text": "Správnost řazení, spojka,\nvibrace a hluk"
             },
             "3": {
-                "header": "Тормозную систему",
-                "text": "Тормозные диски и колодки, ручной тормоз, ESP, ABS"
+                "header": "Brzdový systém",
+                "text": "Brzdové kotouče a destičky\nruční brzda, ESP, ABS"
             },
             "4": {
-                "header": "Рулевое управление",
-                "text": "Посторонний гул и свист при выворачивании колес, другие признаки неисправной работы"
+                "header": "Řízení",
+                "text": "Cizí hučení a pískání při otáčení kol, jiné známky poruchy funkce"
             },
             "5": {
-                "header": "Турбину",
-                "text": "Негерметичность системы, воздуховоды, интеркулер"
+                "header": "Turbo",
+                "text": "Ztráta výkonu, kouř z výfuku\nNetěsnosti v systému, vzduchovody, intercooler."
             },
             "6": {
-                "header": "Выхлопную систему",
-                "text": "Системы экологии EGR, состояние DPF фильтра"
+                "header": "Výfukový systém",
+                "text": "Ekologické systémy EGR,\nstav filtru DPF,\nSCR (AdBlue)"
             },
             "7": {
-                "header": "Кузов",
-                "text": "Ремонтные элементы, вторичные окрасы, силовые части, состояние ЛКП, остекление и оптика"
+                "header": "Karosérie",
+                "text": "Opravené části, sekundární lakování, nosné části, stav laku, skla a optika"
             },
             "8": {
-                "header": "Ходовую часть",
-                "text": "Визуальный осмотр элементов подвески, амортизаторы, запотевания и подтеки, шрусы и привода автомобиля"
+                "header": "Podvozek",
+                "text": "Vizualní kontrola částí podvozku, tlumiče, zamlžování a úniky, homokinetické klouby a hřídele vozidla"
             },
             "9": {
-                "header": "Шины",
-                "text": "Возраст, состояние, остаток"
+                "header": "Pneumatiky",
+                "text": "Věk, stav, zbytek dezénu"
             },
             "10": {
-                "header": "Интерьер",
-                "text": "Признаки износа и несоответствие заявленному пробегу"
+                "header": "Interiér",
+                "text": "Známky opotřebení a nesoulad s deklarovaným počtem najetých kilometrů"
             },
             "11": {
-                "header": "Системы безопасности",
-                "text": "Ремни, подушки безопасности AIRBAG"
+                "header": "Bezpečnostní systémy",
+                "text": "Bezpečnostní pásy, airbagy SRS"
             },
             "12": {
-                "header": "Электрическая часть",
-                "text": "Системы комфорта, кондиционирование, мультимедиа, навигация, дополнительное отопление"
+                "header": "Elektrická část",
+                "text": "Systémy komfortu, klimatizace, multimédia, navigace,\nnezávislé topení"
             },
             "13": {
-                "header": "Компьютерная диагностика",
-                "text": "Ошибки в блоках управления, топливные коррекции, исправность турбин, температуры, сцепление в DSG, сохраненный пробег"
+                "header": "Počítačová diagnostika",
+                "text": "Chyby v řídicích jednotkách,palivové korekce (smooth running controller), ztráta výkonu turbodmychadel,\nteploty motoru, spojka v DSG,\npočet ujetých kilometrů"
             },
             "14": {
-                "header": "Сделаем тест-драйв",
-                "text": "Углубленная оценка состояния отдельных элементов"
+                "header": "Testovací jízda",
+                "text": "Celkový stav a funkčnost jednotlivých částí"
             },
             "15": {
-                "header": "Базы данных",
-                "text": "Пробег, техосмотр, страховые случаи,  угон, залог — информация из различных баз данных"
+                "header": "Databáze",
+                "text": "Počet ujetých kilometrů, technická kontrola, pojistné události, krádež, zástava — informace z různých databází"
             }
         }
     },
     "section_2": {
-        "header": "Цены",
-        "text_1": "Индивидуальный поиск и подбор автомобиля. Или детальная проверка автомобиля по вашему желанию",
-        "text_2": "Проверка автомобиля в Праге и пригороде осуществляется без дополнительных расходов. В других городах и странах — по предварительной договоренности.",
-        "link": "Смотреть услуги",
+        "header": "Ceny",
+        "text_1": "Individuální vyhledávání a výběr vozu. Nebo podrobná kontrola vozu na vaše přání",
+        "text_2": "Prohlídka aut v Praze a okolí se provádí bez dalších poplatků. Ostatní města a staty na základě předchozí domluvy",
+        "link": "Zobrazit služby",
         "list": {
             "1": {
-                "header": "Консультация",
-                "price": "0 CZK",
-                "description": "Консультация по вопросам поиска, обслуживания, покупки автомобилей, за которую вы не платите."
+                "header": "Konzultace",
+                "price": "0 Kč",
+                "description": "Konzultace ohledně vyhledávání, údržby a koupě aut, za kterou neplatíte"
             },
             "2": {
-                "header": "Проверка авто",
-                "price": "от 4000 CZK",
-                "description": "Мы прилагаем максимум усилий для того, чтобы вы сберегли свои деньги и смогли принять решение уже после первого проверенного нами авто"
+                "header": "Prohlídka auta",
+                "price": "od 4000 Kč",
+                "description": "Uděláme maximum pro to, abyste ušetřili své peníze a mohli rozhodnout již po první prohlídce auta"
             },
             "3": {
-                "header": "Следующий авто",
-                "price": "на 20% дешевле",
-                "description": "Поиск лучшего автомобиля никогда не был легким. Не расстраивайтесь! Теперь для вас действует специальная цена"
+                "header": "Další prohlídka auta",
+                "price": "o 20% levnější",
+                "description": "Hledání nejlepšího auta nikdy nebylo jednoduché. Neztrácejte naději!\nMalý bonus od nás."
             }
         }
     },
     "form": {
-        "header": "Будем рады помочь",
-        "text": "Или напишите нам",
-        "mail": "Связаться"
+        "header": "Rádi vám pomůžeme",
+        "text": "Nebo nám napište",
+        "mail": "Kontakt"
     },
     "faq": {
-        "header": "Частые вопросы",
+        "header": "Často kladené otázky",
         "list": {
             "1": {
                 "header": "С чего начать поиск автомобиля?",
