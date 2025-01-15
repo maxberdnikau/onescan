@@ -59,16 +59,16 @@ export default async function HomeComponent({
                     <p className='mt-16px text-center font-medium text-dark-grey max-w-textContainer mx-auto text-base'>
                         {dictionary.section_2.text_1}
                     </p>
-                    <ul className='flex flex-wrap justify-between mt-24px'>
+                    <ul className='flex md:flex-wrap md:justify-center gap-8px mt-24px'>
                         {
                             price_list.map((service: price_item) => (
                                 <li key={nanoid()}
-                                    className={`${styles.priceItem} rounded-large border-2 flex flex-col p-12px`}>
+                                    className={`${styles.priceItem} rounded-large border-2 flex flex-col p-12px w-1/3 sm:w-full`}>
                                     <div className='flex'>
                                         {
                                             service.image ?
                                             <Image
-                                                className={`${styles.priceItem__image} mr-4px`}
+                                                className={`${styles.priceItem__image} mr-4px self-baseline`}
                                                 src={service.image}
                                                 width={64}
                                                 height={64}

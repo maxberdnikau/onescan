@@ -23,7 +23,6 @@
 }
 
 .priceItem {
-    width: calc(25% - calc(calc(8px * 3) / 4));
     background-color: #fff;
     min-height: 250px;
     border: 2px solid #002862;
@@ -64,18 +63,14 @@
         }
     }
 
-    .priceItem:nth-child(n+3) {
-        margin-top: 16px;
+    .priceItem {
+        width: calc(50% - 4px);
     }
 }
 
 @media screen and (max-width: 991px) {
     .checkItem {
         width: calc(100% / 3);
-    }
-
-    .priceItem {
-        width: calc(50% - calc(16px / 2));
     }
 
     .formContainer {
@@ -93,14 +88,6 @@
     }
     .checkItem:nth-child(1) {
         border-top: none;
-    }
-
-    .priceItem {
-        width: 100%;
-    }
-
-    .priceItem:nth-child(n+2) {
-        margin-top: 16px;
     }
 
 

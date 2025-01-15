@@ -85,10 +85,6 @@ export const price_list: price_item[] = [
         "image": "/assets/pricing/second-auto.png",
         "index": "3",
     },
-    {
-        "image": "/assets/pricing/third-auto.png",
-        "index": "4",
-    }
 ];
 
 export const faq_list: faq_item[] = [
