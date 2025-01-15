@@ -6,6 +6,9 @@ export type price_item = {
     image?: string;
     index: string;
 };
+export type faq_item = {
+    index: string;
+}
 
 export const check_list: check_item[] = [
     {
@@ -85,5 +88,23 @@ export const price_list: price_item[] = [
     {
         "image": "/assets/pricing/third-auto.png",
         "index": "4",
+    }
+];
+
+export const faq_list: faq_item[] = [
+    {
+        index: "1",
+    },
+    {
+        index: "2",
+    },
+    {
+        index: "3",
+    },
+    {
+        index: "4",
+    },
+    {
+        index: "5",
     }
 ];

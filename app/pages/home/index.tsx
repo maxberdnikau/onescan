@@ -5,10 +5,11 @@ import { nanoid } from "nanoid";
 import SiteWrapper from "app/components/site-wrapper";
 import Slider from "app/components/main/home/Slider";
 import Form from "app/components/main/home/Form";
+import FAQ from "app/components/shared/FAQ";
 
 import { get_dictionary } from "get-dictionary";
 
-import { check_item, check_list, price_item, price_list } from "./data";
+import { check_item, check_list, faq_list, price_item, price_list } from "./data";
 
 import styles from './style.module.scss';
 
@@ -23,11 +24,9 @@ export default async function HomeComponent({
         <SiteWrapper lang={lang}>
             <main className='flex flex-col w-full pb-[180px]'>
                 <h1 className='text-5xl md:text-4xl sm:text-2xl mt-32px font-bold text-center'>{dictionary.main_text}</h1>
-
                 <div className='rounded-large overflow-hidden mt-16px'>
                     <Slider />
                 </div>
-
                 <p className='text-2xl sm:text-xl mt-24px text-center font-medium text-dark-grey'>
                     {dictionary.description}
                 </p>
@@ -35,7 +34,6 @@ export default async function HomeComponent({
                 <section className='mt-[96px] border border-light-grey py-24px rounded-large'>
                     <h2 className='text-4xl md:text-3xl sm:text-xl font-bold text-center'>{dictionary.section_1.header}</h2>
                     <p className='mt-16px text-center font-medium text-dark-grey max-w-textContainer mx-auto'>{dictionary.section_1.text}</p>
-
                     <ul className='flex flex-wrap mt-24px'>
                         {
                             check_list.map((check_item: check_item) => (
@@ -53,7 +51,6 @@ export default async function HomeComponent({
                             ))
                         }
                     </ul>
-
                 </section>
 
                 <section className='mt-[96px] border border-light-grey pt-16px px-12px pb-32px bg-grey rounded-large flex flex-col'
@@ -62,7 +59,6 @@ export default async function HomeComponent({
                     <p className='mt-16px text-center font-medium text-dark-grey max-w-textContainer mx-auto text-base'>
                         {dictionary.section_2.text_1}
                     </p>
-
                     <ul className='flex flex-wrap justify-between mt-24px'>
                         {
                             price_list.map((service: price_item) => (
@@ -88,7 +84,6 @@ export default async function HomeComponent({
                             ))
                         }
                     </ul>
-
                     <p className='mt-24px text-center font-medium text-dark-grey max-w-textContainer mx-auto text-base'>
                         {dictionary.section_2.text_2}
                     </p>
@@ -121,8 +116,9 @@ export default async function HomeComponent({
                     </div>
                 </div>
 
-                {/* <Faq data={faq.faq_list} /> */}
-
+                <FAQ
+                    data={faq_list}
+                    dictionary={dictionary} />
             </main>
         </SiteWrapper>
     );
