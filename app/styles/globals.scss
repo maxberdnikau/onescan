@@ -86,6 +86,7 @@ a:is(:active, :hover) {
 }
 .static-page h1 {
     @apply text-6xl;
+    margin-bottom: 48px;
 }
 .static-page h2 {
     @apply text-5xl;
