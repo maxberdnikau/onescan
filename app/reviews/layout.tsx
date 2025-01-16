@@ -4,7 +4,8 @@ import SiteWrapper from "app/components/site-wrapper";
 import { seo_builder } from "app/components/seo";
 
 export const metadata: Metadata = seo_builder({
-  title: 'Recenze'
+    title: 'Recenze',
+    canonical: '/reviews',
 });
 
 export default function MdxLayout({ children }: { children: React.ReactNode }) {

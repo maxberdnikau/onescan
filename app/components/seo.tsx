@@ -17,7 +17,7 @@ export const seo_builder = ({
         applicationName: 'Onescan',
         keywords: keywords,
         alternates: {
-            canonical: `https://onescan.pro/` + canonical
+            canonical: `https://onescan.pro` + canonical
         },
         openGraph: {
           title: `${title} | Onescan`,

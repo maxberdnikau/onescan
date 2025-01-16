@@ -4,7 +4,9 @@ import SiteWrapper from "app/components/site-wrapper";
 import { seo_builder } from "app/components/seo";
 
 export const metadata: Metadata = seo_builder({
-  title: 'Контакты'
+  title: 'Контакты',
+  description: 'Меня зовут Егор Попов, я занимаюсь профессиональной проверкой и индивидуальным подбором автомобилей в Чехии и других странах Евросоюза.',
+  canonical: '/ru/contacts',
 });
 
 export default function MdxLayout({ children }: { children: React.ReactNode }) {
