@@ -1,4 +1,8 @@
 .slide {
     aspect-ratio: 2 / 1;
     user-select: none;
+
+    img {
+        object-fit: cover;
+    }
 }
