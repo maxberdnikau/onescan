@@ -5,7 +5,7 @@ import { slider_data, slider_item } from "../../../home/Slider/data";
 
 export default function ImagesBlock () {
     return(
-        <div className="grid grid-cols-2 gap-16px mt-48px">
+        <div className="grid grid-cols-2 sm:grid-cols-1 gap-16px mt-48px">
             {
                 slider_data.map((slide: slider_item) => (
                     <div key={nanoid()}
