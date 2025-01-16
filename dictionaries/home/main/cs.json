@@ -99,24 +99,64 @@
         "header": "Často kladené otázky",
         "list": {
             "1": {
-                "header": "С чего начать поиск автомобиля?",
-                "text": "Подумайте над тем, почему вам нужен автомобиль и как вы собирайтесь его использовать. Не будет лишним определить критерии поиска по степени важности для вас.</br></br> <b>Пожалуйста, подумайте над следующими вопросами:</b></br> 1. Каков лимит вашего бюджета?</br> 2. Каков ваш среднегодовой пробег?</br> 3. Что для вас самое важное в автомобиле?</br> Например:</br> Мой бюджет — до 500 000 кр. Средний пробег в год – 25 000 км. Мне важно – низкая стоимость обслуживания, возраст авто до 3 лет, современный дизайн.</br></br> Затем оставьте запрос и мы свяжемся с вами."
+                "header": "Jak začít hledání auta?",
+                "text": "Zamyslete se nad tím, proč potřebujete auto a jak ho budete používat. Předem si stanovte kritéria pro hledání podle jejich důležitosti pro vás.<br/>Prosím, zamyslete se nad následujícími otázkami:<br/>Jaký je váš rozpočet?<br/>Jaký je váš průměrný roční nájezd?<br/>Co je pro vás na autě nejdůležitější?<br/><br/>Například:<br/>Můj rozpočet je do 500 000 Kč. Průměrný roční nájezd je 25 000 km. Důležité pro mě je – nízké náklady na údržbu, auto do 3 let, moderní design.<br/>Poté nám napište zprávu nebo nám zavolejte."
             },
             "2": {
-                "header": "Что такое Индивидуальный подбор автомобиля?",
-                "text": "Прежде всего это выбор подходящей модели и марки автомобиля, а также правильной конфигурации, которая наиболее соответствует вашим потребностям и желаниям. По вашему желанию предложим вам наиболее привлекательные на наш взгляд объявления о продаже или прокомментируем выбранные вами варианты. Произведём проверку выбранных вами автомобилей. Оценим актуальное состояние автомобиля и определим его недостатки."
+                "header": "Co je to Individuální výběr?",
+                "text": "Především se jedná o výběr vhodného modelu a značky auta, stejně jako správné konfigurace, která nejlépe odpovídá vašim potřebám a přáním. Na váš požadavek vám nabídneme nejatraktivnější inzeráty na prodej aut, které považujeme za nejlepší, nebo okomentujeme vámi vybrané inzeraty. Provedeme kontrolu vámi vybraných aut. Zhodnotíme aktuální stav auta a zjistíme jeho nedostatky."
             },
             "3": {
-                "header": "Сколько стоит консультация?",
-                "text": "Консультация проводится бесплатно. А также, по вашему желанию, бесплатно прокомментируем объявления из интернета выбранные вами."
+                "header": "Kolik stojí konzultace?",
+                "text": "Konzultace je poskytována zdarma. Také na vaše přání zdarma okomentujeme inzerát z internetu, který jste si vybrali."
             },
             "4": {
-                "header": "Автомобили из Германии — как это работает?",
-                "text": "Следует учитывать, что покупка автомобиля в Германии не подразумевает выездные проверки нескольких автомобилей в силу высоких расходов. Выбор совершается в пользу обьявлений, максимально описывающих автомобиль, имеют хорошие фотографии, хороший рейтиг продавца и положительные отзывы. После общения с продавцом мы узнаем всю доступную информацию об автомобиле и последнюю цену. Если после разговора с продавцом у нас сформированно ясное представление об автомобиле, мы связываемся с вами для согласования сделки. Данный метод покупки не исключает все возможныйе риски, однако существенно их снижает. Разумеется, мы детально проверяем автомобиль перед покупкой и информируем вас о актуальном состоянии автомобиля в реальном времени. Вы принимайте решение о покупке автомобиля опираясь на результаты нашей проверки."
+                "header": "Auto z Německa – jak to funguje?",
+                "text": "Je třeba vzít v úvahu, že hledání auta v Německu neznamená osobní prohlídky několika vozidel kvůli vysokým nákladům. Výběr je prováděn na základě inzerátů, které co nejlépe popisují auto, obsahují kvalitní fotografie, dobré hodnocení prodávajícího a pozitivní recenze. Po komunikaci s prodávajícím zjistíme všechny dostupné informace o vozidle a konečnou cenu. Pokud po rozhovoru s prodávajícím budeme mít jasnou představu o autě, kontaktujeme vás pro dohodnutí podrobností transakce. Tento způsob nákupu nezbavuje všechny možné rizika, ale výrazně je snižuje. Samozřejmě, že auto před nákupem důkladně prověříme a informujeme vás o aktuálním stavu vozidla v reálném čase. Rozhodnutí o koupi vozidla udělate na základě výsledků naší kontroly."
             },
             "5": {
-                "header": "Из чего состоит диагностика?",
-                "text": "Диагностика не является глубокой и исчерпывающей по своему характеру, а также не подразумевает работу с осциллографом. Устранение найденной неисправности не входит в данную услугу и с большей долей вероятности должна быть проведена в специализированном сервисе."
+                "header": "Služba diagnostiky poruch – z čeho se skládá?",
+                "text": "Diagnostika není vyčerpávající a nezahrnuje práci s oscilloskopem. Nicméně budete mít pochopení podstaty závady, její projevy a důsledky, stejně jako přibližné náklady na opravu. Odstranění nalezené závady není součástí této služby a pravděpodobně by mělo být prováděno ve specializovaném servisu."
+            },
+            "6": {
+                "header": "Kolik stojí služba kontroly auta?",
+                "text": "Cena kontroly auta se dohodne individuálně podle vašich požadavků a přání. Minimální cena služby je uvedena na hlavní stránce. Cesta nad 30 km od Prahy není zahrnuta v ceně kontroly a platí se předem zvlášť."
+            },
+            "7": {
+                "header": "Mohu být přítomen při kontrole mnou vybraného auta?",
+                "text": "Samozřejmě ano, je možné se setkat na místě kontroly nebo se domluvit na společné cestě. Auto lze také zkontrolovat bez vaší přítomnosti."
+            },
+            "8": {
+                "header": "Jak lze službu uhradit?",
+                "text": "V hotovosti před kontrolou nebo převodem na bankovní účet. Platba kartou není možná."
+            },
+            "9": {
+                "header": "Jak probíhá kontrola auta?",
+                "text": "Zavoláme prodejci a zjistíme základní informace o autě. Projednáme cenu, možnost testovací jízdy, případné zjevné závady, historii servisu a další detaily. Na místě u auta se kontroluje stav karoserie a laku. Prohlédne se podvozek (tam, kde je viditelný). Zhodnotí se stav interiéru a provede se diagnostika řídicích jednotek na přítomnost chyb a závad. Následuje testovací jízda."
+            },
+            "10": {
+                "header": "Je požadována záloha na službu kontroly auta?",
+                "text": "Ano, před potvrzením schůzky s prodejcem je požadována záloha ve výši poloviny ceny kontroly, aby potvrdit vážnost vašich záměrů. Zbývající částka se platí před samotnou kontrolou osobně nebo převodem na účet."
+            },
+            "11": {
+                "header": "Kde můžete provést kontrolu auta? (území)",
+                "text": "V Praze a jejím okolí – to je nejrychlejší a nejdostupnější varianta. Ostatní města a země je nutné domluvit individuálně."
+            },
+            "12": {
+                "header": "Pokud prověřené auto z různých důvodů nebude koupeno, bude mi vrácena cena kontroly?",
+                "text": "Ne, protože služba je považována za poskytnutou a výsledky kontroly nemohou být známé předem. S výsledky kontroly budete schopni samostatně rozhodnout o koupi. Z naší strany vám poskytneme doporučení, na co se zaměřit a co přidat do rozpočtu na vlastnictví daného vozidla."
+            },
+            "13": {
+                "header": "Poskytujete nějakou záruku na prověřená auta?",
+                "text": "Nedáváme žádné záruky na prověřená auta, protože naše služba spočívá v podrobné kontrole stavu vozidla v době prohlídky. Poskytujeme informace o zjištěných závadách a aktuálním stavu vozidla, ale neneseme odpovědnost za případné problémy, které mohou vzniknout po prohlídce. Nicméně, potvrzení stavu laku a beznehodovosti vozidla v okamžiku koupě je zcela reálné."
+            },
+            "14": {
+                "header": "Můžete mi pomoci s vyřízením a doručením auta, pokud bude potřeba?",
+                "text": "Ano, můžeme to projednat individuálně."
+            },
+            "15": {
+                "header": "Provádíte fotografování a videozáznamy během kontroly auta?",
+                "text": "Ano, samozřejmě. Po kontrole obdržíte všechny mediální materiály týkající se prověřovaného vozidla. (WhatsApp nebo Telegram)"
             }
         }
     }
