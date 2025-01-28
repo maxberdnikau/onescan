@@ -88,7 +88,7 @@ export default async function HomeComponent({
                         {dictionary.section_2.text_2}
                     </p>
                     <div className='mt-[24px] flex'>
-                        <Link href={'/services'}
+                        <Link href={lang !== 'cs' ? `/${lang}/services` : '/services'}
                             className='text-2xl pt-[7px] pb-[9px] px-24px border border-black rounded-large mx-auto default-button'>
                             {dictionary.section_2.link}
                         </Link>

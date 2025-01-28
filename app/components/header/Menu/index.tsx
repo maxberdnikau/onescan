@@ -71,7 +71,7 @@ const Menu = ({
                             menu.map((menu_item: menu_item_type): React.ReactElement => (
                                 <li key={nanoid()}
                                     className={`${styles.menuItem} flex md:border-b md:border-b-light-grey`}>
-                                    <Link href={menu_item.link}
+                                    <Link href={lang !== 'cs' ? `/${lang}${menu_item.link}` : `${menu_item.link}`}
                                         className='text-sm md:py-[16px] w-full'
                                         onClick={() => toggle_mob_menu_view(false)}>
                                         {dictionary[menu_item.name]}

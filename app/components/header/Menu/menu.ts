@@ -14,7 +14,7 @@ export const menu: menu_item_type[] = [
   },
   {
     "name": "faq",
-    "link": "#faq"
+    "link": "/#faq"
   },
   {
     "name": "contacts",
