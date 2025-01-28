@@ -1,9 +1,10 @@
 import { Metadata } from "next";
-import SiteWrapper from "app/components/site-wrapper";
 
+import SiteWrapper from "app/components/site-wrapper";
 import { seo_builder } from "app/components/seo";
 
 import YouTube from 'app/components/main/static/contacts/YouTube';
+import TT from "app/components/main/static/contacts/TT";
 
 export const metadata: Metadata = seo_builder({
   title: 'Контакты',
@@ -21,19 +22,7 @@ export default function MdxLayout({ children }: { children: React.ReactNode }) {
             </article>
             
             <YouTube />
-
-            <blockquote className="tiktok-embed"
-                cite="https://www.tiktok.com/@onescan.pro"
-                data-unique-id="onescan.pro"
-                data-embed-from="embed_page"
-                data-embed-type="creator"
-                style={{ maxWidth: 780, minWidth: 288 }}>
-                <section>
-                    <a target="_blank"
-                    href="https://www.tiktok.com/@onescan.pro?refer=creator_embed">@onescan.pro</a>
-                </section>
-            </blockquote>
-            <script async src="https://www.tiktok.com/embed.js"></script>
+            <TT />
         </main>
     </SiteWrapper>
   }

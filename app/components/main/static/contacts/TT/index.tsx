@@ -4,10 +4,10 @@ import dynamic from 'next/dynamic';
 
 const Content = dynamic(() => import('./Content'), { ssr: false });
 
-export default function YouTube() {
+export default function TT() {
     return(
-        <div className="flex mx-auto">
+        <>
             <Content />
-        </div>
+        </>
     )
 }
