@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { nanoid } from "nanoid";
 
-import { slider_data, slider_item } from "../../../home/Slider/data";
+import { slider_data, slider_item } from "app/components/main/home/Slider/data";
 
 export default function ImagesBlock () {
     return(
