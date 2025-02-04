@@ -34,20 +34,31 @@ export default async function Footer ({
                     </ul>
                 </nav>
             </section>
-            <section className='flex justify-center mt-[24px]'>
+            <section className='flex justify-center mt-24px'>
                 <a href='mailto:auto@onescan.pro' className={`${styles.footerLink} text-sm whitespace-nowrap`}>auto@onescan.pro</a>
                 <a href="tel:+420601256408" className={`${styles.footerLink} text-sm whitespace-nowrap`}>+420 601 256 408</a>
             </section>
             <Link href={lang !== 'cs' ? `/${lang}` : '/'}
-                className={`${styles.logo} mx-auto mt-[24px]`}>
+                className={`${styles.logo} mx-auto mt-24px`}>
                 <Image src={'/assets/logo/onescan-logo.svg'}
                     alt="footer Onescan logo"
                     width={142}
                     height={40} />
             </Link>
-            <div className='flex justify-center mt-[16px]'>
+            <section className='flex justify-center mt-16px'>
                 <p className='text-sm text-center'>{dictionary["bottom_text"]}</p>
-            </div>
+            </section>
+            <section className='flex mt-16px justify-center'>
+                {
+                    lang === 'cs' ?
+                    <Link href="/ru">
+                        RU
+                    </Link> :
+                    <Link href="/">
+                        CS
+                    </Link>
+                }
+            </section>
         </footer>
     );
 }
