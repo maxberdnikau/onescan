@@ -55,7 +55,7 @@ export default async function Footer ({
                         RU
                     </Link> :
                     <Link href="/">
-                        CS
+                        CZ
                     </Link>
                 }
             </section>
